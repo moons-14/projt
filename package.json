@@ -1,0 +1,26 @@
+{
+  "name": "projt",
+  "version": "1.0.0",
+  "description": "npx package for project template deployment and config installation with a few commands",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/moons-14/projt.git",
+  "author": "moons14 <moons@moons14.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn tsc && node dist/index.js",
+    "dev": "yarn tsc && node dist/index.js",
+    "run": "node dist/index.js"
+  },
+  "dependencies": {
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/node": "^18.15.3",
+    "commander": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.0.3"
+  }
+}
